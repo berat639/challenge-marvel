@@ -1,0 +1,46 @@
+@import "../../../styles/mixins/index.scss";
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    @include mobile {
+        justify-content: center;
+    }
+    &__item {
+        box-shadow: var(--mk-shadow);
+        padding: 10px;
+        border-radius: 8px;
+        max-width: 150px;
+        transition: 0.2s;
+        &:hover {
+            background-color: var(--mk-main);
+        }
+    }
+    &__description {
+        height: 42px;
+        overflow: hidden;
+    }
+    &__avatar {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.category-head {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile {
+        flex-direction: column;
+    }
+    &__title {
+        margin-bottom: 0;
+    }
+}
+
+.pagination {
+    margin: 15px 0;
+}

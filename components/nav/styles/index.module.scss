@@ -1,0 +1,11 @@
+@import "../../../styles/mixins/index.scss";
+ 
+ 
+  .gradient {
+    background: rgb(229,204,195);
+    background: linear-gradient(90deg, rgba(229,204,195,1) 0%, rgba(96,71,223,1) 100%); 
+    -webkit-box-shadow: 0px 7px 20px 0px rgba(145,137,196,1);
+    -moz-box-shadow: 0px 7px 20px 0px rgba(145,137,196,1);
+    box-shadow: 0px 7px 20px 0px rgba(145,137,196,1);
+  }
+   
